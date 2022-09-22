@@ -1,0 +1,170 @@
+.event-timelines{
+  margin-top: 3rem;
+}
+
+h4 {
+  text-align: center;
+}
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs__head {
+  display: flex;
+  align-items: center;
+  
+  justify-content: space-between;
+  
+  /*background: var(--color-bg1);*/
+  /*box-shadow: 0px 4px 5px rgba(0,0,0,.1);*/
+  border-radius: 12px;
+  padding: 10px 5px;
+  margin-bottom: 20px;
+}
+
+.shadow {
+  
+  border-bottom: 1px solid grey;
+  width: 700px;
+  margin-bottom: 30px;
+  text-align: justify;
+  
+}
+
+.shadow small {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.tabs__toggle span {
+  font-weight: 600;
+  color: white ;
+  font-size: 30px;
+}
+.tabs__toggle span small {
+  font-weight: 600;
+  font-size: 15px;
+}
+.tabs__toggle p {
+  font-size: 17px;
+  text-align: center;
+}
+.tabs__toggle {
+  margin: 0 5px;
+  padding: 7px 25px;
+  /*background: #fff;*/
+  border-radius: 12px;
+  cursor: pointer;
+  transition: .5s;
+
+  font-size: 25px;
+}
+
+.tabs__name {
+  font-weight: 500;
+  font-size: 14px;
+  color: #484848;
+}
+
+.tabs__content {
+  display: none;
+}
+
+.tabs__toggle.is-active {
+  background: var( --color-warning);
+}
+
+.tabs__toggle.is-active .tabs__name {
+  color: #2a61d8;
+}
+
+.tabs__content.is-active {
+  display: block;
+}
+
+.tabs__body {
+
+  background: var(--color-bg1);
+  box-shadow: 0px 4px 5px rgba(0, 0, 0,.1);
+  border-radius: 12px;
+  width: 950px;
+  height: 100%;
+  transform: translate(5%);
+  display: flex;
+  
+  
+  
+}
+
+.tab-wrapper {
+  display: flex;
+}
+
+.indicator {
+  padding: 1.5rem 0;
+  border-right: 1px solid grey;
+  
+}
+
+.indicator li {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: 10px 2rem;
+  cursor: pointer;
+  font-size: .875rem;
+  border-right: 3px solid transparent;
+  
+
+}
+
+.indicator li i {
+  font-size: 1rem;
+}
+
+.indicator li:hover {
+  background: lightblue;
+}
+
+.indicator li.active{
+  border-right-color: blue ;
+  color: var(blue);
+  background: lightblue;
+}
+
+.wrapper-content {
+  padding: 1.5rem 2rem;
+}
+
+.wrapper-content li span  {
+  width:15px;
+  margin-right:5px
+}
+
+.wrapper-content li {
+
+  display: none;
+}
+
+.wrapper-content li.active {
+  display: block;
+}
+
+.btn-primary {
+  margin-top: 15px;
+  transform: translate(330%);
+  border-radius: 12px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0,.1);
+}
+
+
+@media screen and ( max-width: 570px){
+  .wrapper-content{
+    flex-direction: column !important;
+  }
+  .indicator {
+    border-right: none;
+    
+  }
+}
