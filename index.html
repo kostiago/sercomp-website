@@ -21,6 +21,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
+    <style>
+        body {
+
+            background-image: url("./images/bg-stars.svg");
+
+        }
+    </style>
+
 </head>
 
 <body>
@@ -50,13 +58,14 @@
                 <h3>Congresso sertanejo de computação</h3>
                 <h5>25 de outubro a 28 de outubro de 2022</h5>
                 <p>O papel da Computação na Construção de uma Sociedade Inclusiva e Democrática.</p>
-                <a href="https://my.forms.app/sertonerd/formulario-sem-titulo" class="btn" target="_blank"> Inscreva-se</a>
+                <a href="https://my.forms.app/sertonerd/formulario-sem-titulo" class="btn" target="_blank">
+                    Inscreva-se</a>
                 <a href="courses.html" class="btn btn-primary"> Local do Evento</a>
             </div>
 
             <div class="header-right">
                 <div class="header-right-image">
-                    <img src="./images/header.svg" alt="estudantes">
+                    <img src="./images/artão.png" alt="estudantes">
                 </div>
             </div>
 
@@ -107,7 +116,39 @@
         </div>
     </section>
     <!--CATEGORIES END-->
-    
+
+    <section>
+        <div class="container-timer">
+
+            <h1>Contagem até o sercomp</h1>
+
+            <div class="countdown">
+
+                <div>
+                    <p id="days">{time}</p>
+                    <h3>Dias</h3>
+
+                </div>
+
+                <div>
+                    <p id="hours">{time}</p>
+                    <h3>Horas</h3>
+
+                </div>
+
+                <div>
+                    <p id="minutes">{time}</p>
+                    <h3>Minutos</h3>
+                </div>
+
+                <div>
+                    <p id="seconds">{time}</p>
+                    <h3>Segundos</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--ASK QUESTION BEGIN-->
     <section class="faqs">
         <h2>DUVIDAS FREQUENTES</h2>
@@ -225,12 +266,16 @@
     </section>
     <!--EVENT ORGANIZATION END-->
 
+    <include src="./testes/1.html"></include>
+
     <!--FOOTER BEGIN-->
-    <footer >
+    <footer>
         <div class="container footer-container">
 
             <div class="footer-1">
-                <a href="index.html" class="footer-logo"><h4>SERCOMP</h4></a>
+                <a href="index.html" class="footer-logo">
+                    <h4>SERCOMP</h4>
+                </a>
                 <p>Lorem ipsus dolor sit amet consectur adispisngi elti.</p>
             </div>
 
@@ -250,7 +295,7 @@
                     <li><a href="#">Privacy Police</a></li>
                     <li><a href="#">Terms and conditions</a></li>
                     <li><a href="#">Refund Policy</a></li>
-                    
+
                 </ul>
             </div>
 
@@ -263,10 +308,12 @@
 
                 <ul class="footer-socials">
                     <li><a href="#"><i class="uil uil-facebook"></i></a></li>
-                    <li><a href="https://instagram.com/sercomppb?igshid=YmMyMTA2M2Y=" target="_blank"><i class="uil uil-instagram-alt"></i></a></li>
+                    <li><a href="https://instagram.com/sercomppb?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                                class="uil uil-instagram-alt"></i></a></li>
                     <li><a href="#"><i class="uil uil-twitter"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/tiago-costa-b3a3ab191/" target="_blank"><i class="uil uil-linkedin-alt"></i></a></li>
-                   
+                    <li><a href="https://www.linkedin.com/in/tiago-costa-b3a3ab191/" target="_blank"><i
+                                class="uil uil-linkedin-alt"></i></a></li>
+
                 </ul>
             </div>
 
