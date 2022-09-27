@@ -24,6 +24,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
+    <style>
+        body {
+            background-image: url("./images/bg-stars.svg");
+        }
+    </style>
 </head>
 
 <body>
@@ -46,306 +51,180 @@
   </nav>
   <!--NAVBAR END-->
 
-  <section class="event-timelines">
-    <h2>CRONOGRAMA DO EVENTO</h2>
-    <h4>O cronograma do evento pode ser alterado de acordo com as normas informadas no termo de uso.</h4>
-    <div class=" container tabs">
-      <div class="tabs__head">
-        <div class="tabs__toggle is-active">
-          <span class="tabs__name">26 <small>OUT</small></span>
-          <p>DIA 1</p>
-        </div>
-        <div class="tabs__toggle">
-          <span class="tabs__name">27 <small>OUT</small></span>
-          <p>DIA 2</p>
-        </div>
-        <div class="tabs__toggle">
-          <span class="tabs__name">28 <small>OUT</small></span>
-          <p>DIA 3</p>
-        </div>
-      </div>
+  
+  <section class="courses">
+    <h2>Programação SERCOMP</h2>
+    <h2>Minicursos</h2>
+    <div class="container courses-container">
 
-      <div class="tabs__body">
+        <article class="course">
+            <div class="course-image">
+                <img src="./images/minicursos/html-banner.png" alt="">
+            </div>
+            <div class="course-info">
+                <h4>Html, Css, JavaScript</h4>
+                <p>O minicurso tem como objetivo promover reflexões sobre desafios a serem enfrentados por
+                    profissionais
+                    da área e apresentar o frontend no intuito de expandir o conhecimento sobre a determinada área.
+                    Para
+                    consolidar o conhecimento obtido será criada uma página interativa de apresentação de amostras
+                    dos
+                    melhores trabalhos feito (portfólio). A pagina será criada usando as seguintes tecnologias:
+                    HTML, CSS e JAVASCRIPT.</p>
+            </div>
+        </article>
 
-        <!--26/10-->
-        <div class="tabs__content is-active">
+        <article class="course">
+            <div class="course-image">
+                <img src="./images/minicursos/jogos-banner.png" alt="">
+            </div>
+            <div class="course-info">
+                <h4>Jogos Digitais</h4>
+                <p>O minicurso tem como objetivo promover reflexões sobre desafios a serem enfrentados por
+                    profissionais da área e apresentar o frontend no intuito de expandir o conhecimento sobre a
+                    determinada área.
+                    Para consolidar o conhecimento obtido será criada uma página interativa de apresentação de
+                    amostras
+                    dos melhores trabalhos feito (portfólio). A pagina será criada usando as seguintes tecnologias:
+                    HTML, CSS e JAVASCRIPT.</p>
+            </div>
+        </article>
 
-          <div class="tab-wrapper">
+        <article class="course">
+            <div class="course-image">
+                <img src="./images/minicursos/ui-banner.png" alt="">
+            </div>
+            <div class="course-info">
+                <h4>UI e UX</h4>
+                <p>UX é o responsável pelo planejamento e organização de como um produto funciona para que seja
+                    fácil e agradável para o usuário.
+                    E UI significa User Interface, o que geralmente se refere a interfaces gráficas com as quais as
+                    pessoas usuárias conseguem interagir, dessa forma, UI Designers trabalham com o aspecto visual
+                    de um produto digital, ou seja, o quão agradável é a estética da interface.</p>
+            </div>
+        </article>
+        <article class="course">
+            <div class="course-image">
+                <img src="./images/minicursos/kanbam-banner.png" alt="">
+            </div>
+            <div class="course-info">
+                <h4>Quadro Kanban</h4>
+                <p>Kanban é um sistema de controle e gestão do fluxo de produção em empresas e projetos que usa de
+                    cartões coloridos (post-its) e também recebe o nome de gestão visual, em razão do uso de cores
+                    como sinalizadores.</p>
+            </div>
+        </article>
 
-            <ul class="indicator">
-              <li data-target="#morning" class="active"><span><i class="uil uil-sunset"> 1MANHÃ</i></span></li>
-              <li data-target="#after"><i class="uil uil-desert"> TARDE</i></li>
-              <li data-target="#night"><i class="uil uil-wind-moon"> NOITE</i></li>
-            </ul>
+        <article class="course">
+            <div class="course-image">
+                <img src="./images/minicursos/node-banner.png" alt="">
+            </div>
+            <div class="course-info">
+                <h4>Backend NodeJS</h4>
+                <p>Node.js é um ambiente de execução JavaScript que permite executar aplicações desenvolvidas com a
+                    linguagem de forma autônoma, sem depender de um navegador. Com ele, é possível criar
+                    praticamente qualquer tipo de aplicações web, desde servidores para sites estáticos e dinâmicos,
+                    até APIs e sistemas baseados em microserviços.</p>
+            </div>
+        </article>
 
-            <ul class="wrapper-content">
-              <li class="active" id="morning">
-                
-                <div class="shadow">
-                  <p> <i class="uil uil-clock">06:00 - 7:00</i>
-                  <small>(Horário de Brasília)</small>
-                  <i class="uil uil-map-marker">HALL DE ENTRADA</i>
-                  </p>
-                  <p><i class="uil uil-postcard"></i>Credenciamento</p>
-                </div>
+        <article class="course">
+            <div class="course-image">
+                <img src="./images/minicursos/teste-banner.png" alt="">
+            </div>
+            <div class="course-info">
+                <h4>Testes de Software</h4>
+                <p>O teste de software é uma maneira de avaliar a qualidade da aplicação e reduzir o risco de falha
+                    em operação. Testar não consiste apenas em executar testes (executar o software e verificar os resultados).
+                    Executar testes é apenas umas das atividades.
+                    Planejamento, análise, modelagem e implementação dos testes, relatórios de progresso, resultado
+                    e avaliação da qualidade, também são partes de um processo de testes.</p>
+            </div>
+        </article>
 
-                <div class="shadow">
-                  <p> <i class="uil uil-clock">07:15 - 08:45 (Horário de Brasília)</i>
-                  <i class="uil uil-map-marker">AUDITÓRIO PRINCIPAL</i>
-                  </p>
-                  <p><i class="uil uil-microphone"></i>Palestra I - Mercado de trabalho</p>
-                  <p>
-                    Palestrantes(as): i5LAB
-                  </p>
-                  <p>"descrição simples da palestra"</p>
-                </div>
+        <article class="course">
+            <div class="course-image">
+                <img src="./images/minicursos/mini-rosa.jpg" alt="">
+            </div>
+            <div class="course-info">
+                <h4>Pesquisa Bibliográfica</h4>
+                <p>Pesquisa bibliográfica consiste na etapa inicial de todo o trabalho científico ou acadêmico, com
+                    o objetivo de reunir as informações e dados que servirão de base para a construção da
+                    investigação proposta a partir de determinado tema.</p>
+            </div>
+        </article>
 
-                <div >
-                  <p> <i class="uil uil-clock">09:00 - 12:00 (Horário de Brasília)</i>
-                  <i class="uil uil-map-marker">SALA 102</i>
-                  </p>
-                  <p><i class="uil uil-window">Minicurso I - HTML5, CSS3 e JavaScript</i></p>
-                </div>
-
-                  <a href="tools.html" class="btn btn-primary"> O que precisará?</a>
-              </li>
-
-              <!--TARDE-->
-              <li id="after">
-
-                <span>
-                  <p> <i class="uil uil-clock">14:00 - 16:00 (Horário de Brasília)</i>
-                  <i class="uil uil-map-marker">SALA 101</i>
-                  </p>
-                  <p><i class="uil uil-vuejs">Oficina I - Framework VueJS</i></p>
-                </span>
-
-                <span>
-                  <p> <i class="uil uil-clock">16:00 - 17:00 (Horário de Brasília)</i>
-                  <i class="uil uil-map-marker">AUDITÓRIO PRINCIPAL</i>
-                  </p>
-                  <p><i class="uil uil-document-layout-center"></i>Apresentação de artigos</p>
-                </span>
-                <a href="courses copy.html" class="btn btn-primary"> O que precisará?</a>
-
-              </li>
-
-              <!--NOITE-->
-              <li id="night">
-
-                <span>
-                  <p> <i class="uil uil-clock">19:00 - 20:00 (Horário de Brasília)</i>
-                  <i class="uil uil-map-marker">AUDITÓRIO PRINCIPAL</i>
-                  </p>
-                  <p><i class="uil uil-microphone"></i>Palestra I - Mercado de trabalho</p>
-                  <p>
-                      Palestrantes(as):
-                  </p>
-                  <p>"descrição simples da palestra"</p>
-                </span>
-
-                <span>
-                  <p> <i class="uil uil-clock">20:30 - 21:30 (Horário de Brasília)</i>
-                  <i class="uil uil-map-marker">SALA 101</i>
-                  </p>
-                  <p><i class="uil uil-github"></i>Minicurso II - Introdução ao Github</p>
-                </span>
-
-                <a href="courses copy.html" class="btn btn-primary"> O que precisará?</a>
-              </li>
-            </ul>
-
-          </div>
-
-        </div>
-
-        <!--27/10-->
-        <div class="tabs__content">
-
-          <div class="tab-wrapper">
-
-            <ul class="indicator">
-              <li data-target="#morning" class="active"><span><i class="uil uil-sunset"> 1MANHÃ</i></span></li>
-              <li data-target="#after"><i class="uil uil-desert"> TARDE</i></li>
-              <li data-target="#night"><i class="uil uil-wind-moon"> NOITE</i></li>
-            </ul>
-
-            <ul class="wrapper-content">
-              <li class="active" id="morning">
-                
-                <span>
-                  <p> <i class="uil uil-clock">06:00 - 7:00 (Horário de Brasília)</i>
-                  <i class="uil uil-map-marker">HALL DE ENTRADA</i>
-                  </p>
-                  <p><i class="uil uil-postcard"></i>Credenciamento</p>
-                </span>
-
-                <span>
-                  <p> <i class="uil uil-clock">07:15 - 08:45 (Horário de Brasília)</i>
-                  <i class="uil uil-map-marker">AUDITÓRIO PRINCIPAL</i>
-                  </p>
-                  <p><i class="uil uil-microphone"></i>Palestra I - Mercado de trabalho</p>
-                  <p>
-                    Palestrantes(as): i5LAB
-                  </p>
-                  <p>"descrição simples da palestra"</p>
-                </span>
-
-                <span>
-                  <p> <i class="uil uil-clock">09:00 - 12:00 (Horário de Brasília)</i>
-                  <i class="uil uil-map-marker">SALA 102</i>
-                  </p>
-                  <p><i class="uil uil-window">Minicurso I - HTML5, CSS3 e JavaScript</i></p>
-                </span>
-
-                  <a href="courses copy.html" class="btn btn-primary"> O que precisará?</a>
-              </li>
-
-              <!--TARDE-->
-              <li id="after">
-
-                <span>
-                  <p> <i class="uil uil-clock">14:00 - 16:00 (Horário de Brasília)</i>
-                  <i class="uil uil-map-marker">SALA 101</i>
-                  </p>
-                  <p><i class="uil uil-vuejs">Oficina I - Framework VueJS</i></p>
-                </span>
-
-                <span>
-                  <p> <i class="uil uil-clock">16:00 - 17:00 (Horário de Brasília)</i>
-                  <i class="uil uil-map-marker">AUDITÓRIO PRINCIPAL</i>
-                  </p>
-                  <p><i class="uil uil-document-layout-center"></i>Apresentação de artigos</p>
-                </span>
-                <a href="courses copy.html" class="btn btn-primary"> O que precisará?</a>
-
-              </li>
-
-              <!--NOITE-->
-              <li id="night">
-
-                <span>
-                  <p> <i class="uil uil-clock">19:00 - 20:00 (Horário de Brasília)</i>
-                  <i class="uil uil-map-marker">AUDITÓRIO PRINCIPAL</i>
-                  </p>
-                  <p><i class="uil uil-microphone"></i>Palestra I - Mercado de trabalho</p>
-                  <p>
-                      Palestrantes(as):
-                  </p>
-                  <p>"descrição simples da palestra"</p>
-                </span>
-
-                <span>
-                  <p> <i class="uil uil-clock">20:30 - 21:30 (Horário de Brasília)</i>
-                  <i class="uil uil-map-marker">SALA 101</i>
-                  </p>
-                  <p><i class="uil uil-github"></i>Minicurso II - Introdução ao Github</p>
-                </span>
-
-                <a href="courses copy.html" class="btn btn-primary"> O que precisará?</a>
-              </li>
-            </ul>
-
-          </div>
-
-        </div>
-
-        <!--28/10-->
-        <div class="tabs__content">
-
-          <div class="tab-wrapper">
-
-            <ul class="indicator">
-              <li data-target="#morning" class="active"><span><i class="uil uil-sunset"> 1MANHÃ</i></span></li>
-              <li data-target="#after"><i class="uil uil-desert"> TARDE</i></li>
-              <li data-target="#night"><i class="uil uil-wind-moon"> NOITE</i></li>
-            </ul>
-
-            <ul class="wrapper-content">
-              <li class="active" id="morning">
-                
-                <span>
-                  <p> <i class="uil uil-clock">06:00 - 7:00 (Horário de Brasília)</i>
-                  <i class="uil uil-map-marker">HALL DE ENTRADA</i>
-                  </p>
-                  <p><i class="uil uil-postcard"></i>Credenciamento</p>
-                </span>
-
-                <span>
-                  <p> <i class="uil uil-clock">07:15 - 08:45 (Horário de Brasília)</i>
-                  <i class="uil uil-map-marker">AUDITÓRIO PRINCIPAL</i>
-                  </p>
-                  <p><i class="uil uil-microphone"></i>Palestra I - Mercado de trabalho</p>
-                  <p>
-                    Palestrantes(as): i5LAB
-                  </p>
-                  <p>"descrição simples da palestra"</p>
-                </span>
-
-                <span>
-                  <p> <i class="uil uil-clock">09:00 - 12:00 (Horário de Brasília)</i>
-                  <i class="uil uil-map-marker">SALA 102</i>
-                  </p>
-                  <p><i class="uil uil-window">Minicurso I - HTML5, CSS3 e JavaScript</i></p>
-                </span>
-
-                  <a href="courses copy.html" class="btn btn-primary"> O que precisará?</a>
-              </li>
-
-              <!--TARDE-->
-              <li id="after">
-
-                <span>
-                  <p> <i class="uil uil-clock">14:00 - 16:00 (Horário de Brasília)</i>
-                  <i class="uil uil-map-marker">SALA 101</i>
-                  </p>
-                  <p><i class="uil uil-vuejs">Oficina I - Framework VueJS</i></p>
-                </span>
-
-                <span>
-                  <p> <i class="uil uil-clock">16:00 - 17:00 (Horário de Brasília)</i>
-                  <i class="uil uil-map-marker">AUDITÓRIO PRINCIPAL</i>
-                  </p>
-                  <p><i class="uil uil-document-layout-center"></i>Apresentação de artigos</p>
-                </span>
-                <a href="courses copy.html" class="btn btn-primary"> O que precisará?</a>
-
-              </li>
-
-              <!--NOITE-->
-              <li id="night">
-
-                <span>
-                  <p> <i class="uil uil-clock">19:00 - 20:00 (Horário de Brasília)</i>
-                  <i class="uil uil-map-marker">AUDITÓRIO PRINCIPAL</i>
-                  </p>
-                  <p><i class="uil uil-microphone"></i>Palestra I - Mercado de trabalho</p>
-                  <p>
-                      Palestrantes(as):
-                  </p>
-                  <p>"descrição simples da palestra"</p>
-                </span>
-
-                <span>
-                  <p> <i class="uil uil-clock">20:30 - 21:30 (Horário de Brasília)</i>
-                  <i class="uil uil-map-marker">SALA 101</i>
-                  </p>
-                  <p><i class="uil uil-github"></i>Minicurso II - Introdução ao Github</p>
-                </span>
-
-                <a href="courses copy.html" class="btn btn-primary"> O que precisará?</a>
-              </li>
-            </ul>
-
-          </div>
-
-        </div>
-
-      </div>
+        <article class="course">
+            <div class="course-image">
+                <img src="./images/minicursos/scrum.jpeg" alt="">
+            </div>
+            <div class="course-info">
+                <h4>Introdução ao Scrum</h4>
+                <p>Scrum é um conjunto de boas práticas empregado no gerenciamento de projetos complexos, em que não
+                    se conhece todas as etapas ou necessidades. Ela é aplicada a partir de ciclos rápidos,
+                    chamados sprints, nos quais há um tempo determinado para que as atividades sejam concluídas,
+                    geralmente, entre duas e quatro semanas.
+                </p>
+            </div>
+        </article>
     </div>
 
+    <h2>Oficinas</h2>
 
-  </section>
+    <div class="container courses-container">
+
+        <article class="course">
+            <div class="course-image">
+                <img src="./images/elixir.jpeg" alt="">
+            </div>
+            <div class="course-info">
+                <h4>Elixir</h4>
+                <p>Elixir é uma linguagem de programação funcional, com o diferencial de seu código ser
+                    executado através de processos isolados.
+                    E está por trás de projetos como o WhatsApp e Discord. Além de ser uma linguagem de programação
+                    brasileira.</p>
+            </div>
+        </article>
+
+        <article class="course">
+            <div class="course-image">
+                <img src="./images/minicursos/auriell.jpg" alt="">
+            </div>
+            <div class="course-info">
+                <h4>Artigo Científico e Projeto de Pesquisa</h4>
+                <p>Projeto de pesquisa compreende toda a etapa de planejamento que se pretende seguir durante a
+                    pesquisa. Já o artigo científico é a publicação com autoria declarada, que apresenta e discute
+                    ideias, métodos, técnicas, processos e resultados nas diversas áreas do conhecimento.</p>
+            </div>
+        </article>
+
+        <article class="course">
+            <div class="course-image">
+                <img src="./images/vue.jpeg" alt="">
+            </div>
+            <div class="course-info">
+                <h4>VueJS</h4>
+                <p>O Vue.js é um framework Javascript usado para o desenvolvimento web, usado para construir SPA
+                    (Single Page Applications) e interfaces de usuário, tornou-se uma excelente opção, também, pelo fato de
+                    ter componentes reutilizáveis e proporcionar o desenvolvimento ágil.</p>
+            </div>
+        </article>
+
+        <article class="course">
+            <div class="course-image">
+                <img src="./images/robotica.jpeg" alt="">
+            </div>
+            <div class="course-info">
+                <h4>Elixir</h4>
+                <p>Robótica educacional é um método de aprendizagem focado na pesquisa, descoberta e construção de
+                    uma máquina como resultado da aquisição de conhecimentos. </p>
+            </div>
+        </article>
+    </div>
+
+</section>
+
+  
 
   <!--FOOTER BEGIN-->
   <footer>
@@ -355,7 +234,7 @@
         <a href="index.html" class="footer-logo">
           <h4>SERCOMP</h4>
         </a>
-        <p>Lorem ipsus dolor sit amet consectur adispisngi elti.</p>
+        <p>O papel da Computação na Construção de uma Sociedade Inclusiva e Democrática.</p>
       </div>
 
       <div class="footer-2">
@@ -381,8 +260,8 @@
       <div class="footer-4">
         <h4>Contato</h4>
         <div>
-          <p class="uil uil-phone"> +01 234 567 8910</pc>
-          <p class="uil uil-at">contato@user.com</p>
+            <p class="uil uil-phone">+55 (83) 99404-0841</p>
+            <p class="uil uil-at">cacccampusvii@gmail.com</p>
         </div>
 
         <ul class="footer-socials">

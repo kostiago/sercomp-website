@@ -12,28 +12,22 @@
     margin: 1.6rem 0 2.5rem;
 }
 
-
-
 .achivements-cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 1.5rem;
+    margin: 20px;
 }
 
-
-.achivements-card {
+.achivement-card{
     background: var(--color-bg1);
     padding: 1.6rem;
-    border: 1rem;
+    border-radius: 1rem;
     text-align: center;
     transition: var(--transition);
 }
 
-.achivements-card > p {
-    margin-top: 1rem;
-}
-
-.achivements-card:hover{
+.achivement-card:hover {
     background: var(--color-bg2);
     box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
 }
@@ -43,14 +37,10 @@
     padding: 0.6rem;
     border-radius: 1rem;
     display: inline-block;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 2rem;
 }
 
-.achivements-card:nth-child(2) 
-.achivement-icon {
-    background: var(--color-primary);
-}
 
 /*TEAM*/
 
@@ -118,67 +108,7 @@
 }
 
 
-/*POPUP*/
-
-.modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: 200ms ease-in-out;
-    border-radius: 10px;
-    z-index: 10;
-    background: var(--color-primary);
-    width: 500px;
-    max-width: 80%;
-  }
   
-  .modal.active {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  
-  .modal-header {
-    padding: 10px 15px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    
-  }
-  
-  .modal-header .title {
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
-  
-  .modal-header .close-button {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
-  
-  .modal-body {
-    padding: 10px 15px;
-  }
-  
-  #overlay {
-    position: fixed;
-    opacity: 0;
-    transition: 200ms ease-in-out;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, .5);
-    pointer-events: none;
-  }
-  
-  #overlay.active {
-    opacity: 1;
-    pointer-events: all;
-  }
 
 /* MEDIA QUERIES TABLET*/
 
