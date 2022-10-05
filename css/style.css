@@ -192,8 +192,10 @@ header {
     gap: 4rem;
 }
 
+
+
 .categories-left {
-    margin-right: 4rem;
+    margin-right: 2rem;
 }
 
 .categories-left p {
@@ -290,7 +292,7 @@ header {
 }
 
 .faqs h2 {
-    margin-top: 8rem;
+    margin-top: 1rem;
 
 }
 
