@@ -1,10 +1,10 @@
-.event-timelines{
+.event-timelines {
   margin-top: 3rem;
 }
 
 
 /*HEADER*/
-.header{
+.header {
   height: calc(100vh - 5rem);
   position: relative;
   top: 5rem;
@@ -12,10 +12,10 @@
   place-items: center;
   overflow: hidden;
   background: var(--color-bg1);
-    
+
 }
 
-.description-header-container{
+.description-header-container {
   display: grid;
   grid-template-columns: 55% 45%;
   height: 100%;
@@ -27,17 +27,18 @@
   height: 100%;
 }
 
-.description-header-left h3{
+.description-header-left h3 {
   font-size: 50px;
 }
+
 .description-header-left h4 {
-  margin-bottom: 0.6rem ;
+  margin-bottom: 0.6rem;
 }
 
 .description-header-left p {
   margin: 1.2rem 0 2rem;
-  
-  
+
+
 }
 
 .description-header-right {
@@ -63,6 +64,200 @@
   bottom: -10rem;
   right: -20rem;
   z-index: 1;
+}
+
+/*TABS TIMELINE*/
+
+
+.tabs {
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tabs-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 30px;
+  padding: 10px 5px;
+
+}
+
+.tabs-toggle {
+  margin: 0 5px;
+  padding: 7px 25px;
+
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.tabs-name {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+small {
+  font-size: 20px;
+}
+
+.tabs-content {
+  display: none;
+}
+
+.tabs-toggle.is-active {
+  background: var(--color-bg1);
+}
+
+
+
+.tabs-content.is-active {
+  display: block;
+}
+
+
+/*TIMELINE*/
+
+.timeline-main {
+  margin-top: 4rem;
+}
+
+.timeline-main {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  display: grid;
+  place-items: center;
+}
+
+.timeline-main .heading {
+
+  font-weight: 500;
+  margin-bottom: 80px;
+  position: relative;
+  margin-top: 80px;
+}
+
+.heading::after {
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 3px;
+  left: 50%;
+  bottom: -5px;
+  background-image: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
+  transform: translateX(-50%);
+}
+
+
+.timeline-container {
+  width: 70%;
+  height: auto;
+  position: relative;
+}
+
+.timeline-container ul::after {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 100%;
+  background: var(--color-light);
+}
+
+.timeline-container ul li p {
+  font-weight: bold;
+}
+
+.timeline-container ul li {
+  width: 50%;
+  height: auto;
+  padding: 15px 20px;
+  background: var(--color-bg1);
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  z-index: 1;
+  position: relative;
+}
+
+
+
+.timeline-container ul li:nth-child(even) {
+  float: right;
+  clear: left;
+  transform: translateX(30px);
+}
+
+.timeline-container ul li:nth-child(odd) .date {
+  right: 20px;
+}
+
+.timeline-container ul li:nth-child(odd) {
+  float: left;
+  clear: right;
+  transform: translateX(-30px);
+  text-align: right;
+}
+
+.timeline-container ul li:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.timeline-container ul li .title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+ul li p {
+  font-size: 15px;
+  margin: 7px 0;
+  line-height: 23px;
+}
+
+ul li .date {
+  position: absolute;
+  top: -36px;
+  width: 135px;
+  border-radius: 10px;
+  background: var(--color-primary);
+  display: grid;
+  place-items: center;
+  font-size: 16px;
+}
+
+
+.timeline-container ul li .circle {
+  width: 30px;
+  height: 30px;
+  background: var(--color-bg2);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+
+}
+
+.timeline-container ul li .circle::after {
+  content: '';
+  width: 18px;
+  height: 18px;
+  background: var(--color-bg);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timeline-container ul li:nth-child(odd) .circle {
+  right: -30px;
+  transform: translate(50%, -50%);
+}
+
+.timeline-container ul li:nth-child(even) .circle {
+  left: -30px;
+  transform: translate(-50%, -50%);
 }
 
 /*COURSES*/
@@ -98,45 +293,51 @@
 
 @media screen and (max-width: 1024px) {
 
-  .header{
+  .header {
     height: 100%;
     padding: 14rem 0 0;
-}
+  }
 
-.description-header-container {
+  .description-header-container {
     align-items: flex-end;
     height: 100%;
-}
+  }
 
-.description-header-left {
+  .description-header-left {
     margin-bottom: 6rem;
-}
+  }
 
-.description-header-right {
+  .description-header-right {
     align-items: flex-end;
     height: 100%;
-}
+  }
 
-.header-right-bg {
+  .header-right-bg {
     width: 30rem;
     height: 30rem;
     right: 40%;
     bottom: 40%;
     transform: translate(50%, 50%);
-}
+  }
 
-.header-image {
+  .header-image {
     bottom: -1rem;
     right: -18rem;
     width: 250%;
-}
+  }
+
+  .timeline-container {
+    width: 85%;
+    transform: translateX(15px);
+  }
+
 
   .courses {
-      margin-top: 0;
+    margin-top: 0;
   }
 
   .courses-container {
-      grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -145,108 +346,151 @@
   .header {
     height: 100vh;
     padding: 0;
-}
-
-.description-header-container {
-    grid-template-columns: 1fr;
-    margin-top: 4.4rem;
-    gap: 0;
-}
-
-.description-header-left {
-    text-align: center;
-   
-}
-
-.description-header-left p {
-    margin: 0.5rem 0 1.2rem;
-    text-align: justify;
-    font-size: .875rem;
-}
-
-.description-header-left h4{
-  margin-top: 2rem ;
-    font-size: 1rem;
-}
-
-.description-header-left h1 {
-    font-size: 1.8rem;
-}
-
-.description-header-left h5{
-    font-size: 1rem;
-    margin-top:1rem ;
-}
-
-
-.header-image {
-    width: 75%;
-    left: 4rem;
-    bottom: -2rem;
-    
-}
-
-.header-right-bg {
-    bottom: -180%;
-    left: -12rem;
-}
-
-  .courses-container {
-      grid-template-columns: 1fr;
-  }
-  
-}
-
-@media screen and ( max-width: 450px){
-
-  .header {
-      height: 100vh;
-      padding: 0;
   }
 
   .description-header-container {
-      grid-template-columns: 1fr;
-      margin-top: 4.4rem;
-      gap: 0;
+    grid-template-columns: 1fr;
+    margin-top: 4.4rem;
+    gap: 0;
   }
 
   .description-header-left {
-      text-align: center;
-     
+    text-align: center;
+
   }
 
   .description-header-left p {
-      margin: 0.5rem 0 1.2rem;
-      text-align: justify;
-      font-size: .775rem;
+    margin: 0.5rem 0 1.2rem;
+    text-align: justify;
+    font-size: .875rem;
   }
 
-  .description-header-left h4{
-    margin-top: 2rem ;
-      font-size: .957rem;
+  .description-header-left h4 {
+    margin-top: 2rem;
+    font-size: 1rem;
   }
-  
+
   .description-header-left h1 {
-      font-size: 1.4rem;
+    font-size: 1.8rem;
   }
-  
-  .description-header-left h5{
-      font-size: .975rem;
-      margin-top: 1rem ;
+
+  .description-header-left h5 {
+    font-size: 1rem;
+    margin-top: 1rem;
   }
+
 
   .header-image {
-      width: 75%;
-      left: 3rem;
-      bottom: 1.5rem;
-      
+    width: 75%;
+    left: 4rem;
+    bottom: -2rem;
+
   }
 
   .header-right-bg {
-      bottom: -170%;
-      left: -16rem;
+    bottom: -180%;
+    left: -12rem;
+  }
+
+  .tabs-name {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  small {
+    font-size: 22px;
+  }
+
+  .timeline-container {
+    width: 80%;
+  }
+
+  .timeline-container ul::after {
+    left: -30px;
+  }
+
+  .timeline-container ul li {
+    width: 100%;
+    float: none;
+    clear: none;
+    margin-bottom: 80px;
+  }
+
+  .timeline-container ul li:nth-child(odd) {
+    transform: translateX(0);
+    text-align: left;
+  }
+
+  .timeline-container ul li:nth-child(odd) .date {
+    left: 20px;
+  }
+
+  .timeline-container ul li:nth-child(odd) .circle {
+    left: -30px;
+    transform: translate(-50%, -50%);
+  }
+
+  .timeline-container ul li:nth-child(even) {
+    transform: translateX(0);
+  }
+
+
+  .courses-container {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .header {
+    height: 100vh;
+    padding: 0;
+  }
+
+  .description-header-container {
+    grid-template-columns: 1fr;
+    margin-top: 4.4rem;
+    gap: 0;
+  }
+
+  .description-header-left {
+    text-align: center;
 
   }
 
- 
+  .description-header-left p {
+    margin: 0.5rem 0 1.2rem;
+    text-align: justify;
+    font-size: .775rem;
+  }
+
+  .description-header-left h4 {
+    margin-top: 2rem;
+    font-size: .957rem;
+  }
+
+  .description-header-left h1 {
+    font-size: 1.4rem;
+  }
+
+  .description-header-left h5 {
+    font-size: .975rem;
+    margin-top: 1rem;
+  }
+
+  .header-image {
+    width: 75%;
+    left: 3rem;
+    bottom: 1.5rem;
+
+  }
+
+  .header-right-bg {
+    bottom: -170%;
+    left: -16rem;
+
+  }
+
+
 }
