@@ -75,6 +75,54 @@
     </header>
     <!--HEADER END-->
 
+    <!--PARTNERS-->
+    <section class="partners">
+        
+        <div class="container partners-container mySwiper">
+
+            <h1>CONHEÇA NOSSOS PARCEIROS</h1>
+    
+            <div class="swiper-wrapper">
+    
+                <article class="swiper-slide">
+                    <div class=" avatar-partner">
+                        <img src="./images/parceiros/mio.png" alt="">
+                    </div>
+                </article>
+    
+    
+                <article class="swiper-slide">
+                    <div class="avatar-partner">
+                        <img src="./images/parceiros/cactus.png" alt="">
+                    </div>
+                </article>
+    
+                <article class="swiper-slide">
+                    <div class="avatar-partner">
+                        <img src="./images/parceiros/flow.png" alt="">
+                    </div>
+                </article>
+    
+                <article class="swiper-slide">
+                    <div class="avatar-partner">
+                        <img src="./images/parceiros/serv.png" alt="">
+                    </div>
+                </article>
+    
+                <article class="swiper-slide">
+                    <div class="avatar-partner">
+                        <img src="./images/parceiros/u__1_-removebg-preview.png" alt="">
+                    </div>
+                </article>
+    
+    
+            </div>
+            <div class="swiper-pagination"></div>
+    
+    
+        </div>
+    </section>
+
     <!--CATEGORIES BEGIN-->
     <section class="categories">
         <div class="container categories-container">
@@ -408,12 +456,15 @@
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 1,
             spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
+            autoplay: {
+                delay: 3000,
             },
             breakpoints: {
                 600: {
+                    slidesPerView: 2,
+                },
+
+                800: {
                     slidesPerView: 2,
                 }
             }

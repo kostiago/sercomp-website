@@ -115,6 +115,7 @@ nav {
     position: fixed;
     top: 0;
     z-index: 11;
+    background: var(--color-bg1);
 }
 
 /* NAVBAR CHANGE*/
@@ -159,6 +160,7 @@ header {
     overflow: hidden;
     height: 70vh;
     margin-bottom: 5rem;
+    background: var(--color-bg1);
 }
 
 .header-container {
@@ -174,6 +176,33 @@ header {
 }
 
 /*HEADER END*/
+
+/*PARTNERS*/
+
+
+.partners-container {
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.partners-container h1 {
+    text-align: center;
+}
+
+.avatar-partner {
+    width: 22rem;
+    height: 22rem;
+    border-radius: 10%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    
+}
+
+.partner-info {
+    text-align: center;
+}
+
 
 /*CATEGORIES BEGIN*/
 .categories {
