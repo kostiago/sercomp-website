@@ -89,6 +89,59 @@
         </div>
     </section>
 
+    <!--PARTNERS-->
+    <section class="partners">
+        
+        <div class="container partners-container mySwiper">
+
+            <h1>CONHEÇA NOSSOS PARCEIROS</h1>
+    
+            <div class="swiper-wrapper">
+    
+                <article class="swiper-slide">
+                    <div class=" avatar-partner">
+                        <img src="./images/parceiros/mio.png" alt="">
+                    </div>
+                </article>
+
+                <article class="swiper-slide">
+                    <div class=" avatar-partner">
+                        <img src="./images/parceiros/urbano-norte.png" alt="">
+                    </div>
+                </article>
+    
+    
+                <article class="swiper-slide">
+                    <div class="avatar-partner">
+                        <img src="./images/parceiros/cactus.png" alt="">
+                    </div>
+                </article>
+    
+                <article class="swiper-slide">
+                    <div class="avatar-partner">
+                        <img src="./images/parceiros/flow.png" alt="">
+                    </div>
+                </article>
+    
+                <article class="swiper-slide">
+                    <div class="avatar-partner">
+                        <img src="./images/parceiros/serv.png" alt="">
+                    </div>
+                </article>
+    
+                <article class="swiper-slide">
+                    <div class="avatar-partner">
+                        <img src="./images/parceiros/u__1_-removebg-preview.png" alt="">
+                    </div>
+                </article>
+    
+    
+            </div>
+            <div class="swiper-pagination"></div>
+    
+    
+        </div>
+    </section>
 
     <!--ABOUT PAGE  TEAM BEGIN-->
 
@@ -444,6 +497,28 @@
 
     <!--SCRIPT JS-->
     <script src="./main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+     <!--SWIPER INIT-->
+     <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 3000,
+            },
+            breakpoints: {
+                600: {
+                    slidesPerView: 2,
+                },
+
+                800: {
+                    slidesPerView: 2,
+                }
+            }
+        });
+    </script>
 
 </body>
 
